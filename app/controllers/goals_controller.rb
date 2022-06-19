@@ -10,6 +10,7 @@ class GoalsController < ApplicationController
   # GET /goals/new
   def new
     @goal = current_user.goals.new
+    p "コントローラーのnewは通りました"
   end
 
   # GET /goals/1/edit
